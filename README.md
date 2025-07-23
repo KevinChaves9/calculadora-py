@@ -1,15 +1,17 @@
-# calculadora-py
-## 💡 Lógica da Calculadora
+### 💡 Como funciona a calculadora (explicação do código)
 
-O programa da calculadora foi desenvolvido em Python com o objetivo de realizar operações básicas (+, -, *, /).
+O script `calculadora.py` é um programa interativo de linha de comando. Ele apresenta ao usuário um menu com quatro operações matemáticas básicas: **soma, subtração, multiplicação e divisão**.
 
-### Como funciona:
+O funcionamento é o seguinte:
 
-1. O usuário é solicitado a digitar dois números e o operador desejado.
-2. O código verifica qual operação foi solicitada e realiza o cálculo correspondente.
-3. Caso o operador seja inválido, uma mensagem de erro é exibida.
-4. O programa trata entradas inválidas com `try-except`, incluindo:
-   - Erros de conversão de string para número (`ValueError`).
-   - Divisão por zero (`ZeroDivisionError`).
+1. O usuário escolhe uma operação.
+2. O programa solicita dois números como entrada.
+3. Dependendo da operação escolhida, o cálculo é realizado.
+4. O resultado é exibido na tela.
+5. O programa então pergunta se o usuário quer fazer outra operação ou sair.
 
-Este código está localizado no arquivo `calculadora.py` e pode ser executado diretamente via terminal ou pelo script `executar_calculadora.sh`.
+Além disso:
+
+- O código trata erros de entrada (como letras no lugar de números).
+- Evita divisão por zero, mostrando uma mensagem de erro apropriada.
+- O loop só é finalizado quando o usuário escolhe a opção "5 - Sair".
